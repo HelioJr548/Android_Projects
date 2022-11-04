@@ -97,6 +97,11 @@ class MainActivity : AppCompatActivity() {
                 cursor.moveToNext()
             }
 
+/*
+//            APAGAR TABELA
+            bd.execSQL("DROP TABLE jogosCopa")
+*/
+
         } catch (e: Exception) {
             e.printStackTrace()
         }
