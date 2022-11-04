@@ -75,6 +75,11 @@ class MainActivity : AppCompatActivity() {
 //            RECUPERAR DADOS
             val cursor = bd.rawQuery("SELECT * FROM jogosCopa ORDER BY jogo ASC", null)
 
+/*
+//            UPDATE
+            bd.execSQL("UPDATE jogosCopa SET info = 'BRASIL CAMPEÃO' WHERE info = 'Final'")
+*/
+
 //            CAPTURA DE DADOS
             val jogo = cursor.getColumnIndex("jogo")
             val info = cursor.getColumnIndex("info")
