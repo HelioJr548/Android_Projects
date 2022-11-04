@@ -72,6 +72,30 @@ class MainActivity : AppCompatActivity() {
                         "VALUES ('Final', '18/12/2022', 'Brasil', 'Inglaterra', '3x1')"
             )
 
+//            RECUPERAR DADOS
+            val cursor = bd.rawQuery("SELECT * FROM jogosCopa ORDER BY jogo ASC", null)
+
+//            CAPTURA DE DADOS
+            val jogo = cursor.getColumnIndex("jogo")
+            val info = cursor.getColumnIndex("info")
+            val data = cursor.getColumnIndex("data")
+            val selecao = cursor.getColumnIndex("selecao")
+            val rival = cursor.getColumnIndex("rival")
+            val placar = cursor.getColumnIndex("placar")
+
+//            APRESENTAR DADOS
+            cursor.moveToFirst()
+            while (cursor != null) {
+                Log.i(
+                    "RESULTADO ", "ID: " + cursor.getString(jogo) +
+                            "| INFO: " + cursor.getString(info) +
+                            "| DATA: " + cursor.getString(data) +
+                            "| SELEÇÃO: " + cursor.getString(selecao) +
+                            "| RIVAL: " + cursor.getString(rival) +
+                            "| PLACAR: " + cursor.getString(placar)
+                )
+                cursor.moveToNext()
+            }
 
         } catch (e: Exception) {
             e.printStackTrace()
