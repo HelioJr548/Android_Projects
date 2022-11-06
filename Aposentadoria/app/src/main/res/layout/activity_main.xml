@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradiente"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_horizontal"
+        android:text="Calcule quanto tempo falta para sua aposentadoria!"
+        android:textColor="@color/white"
+        android:textFontWeight="12"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Escolha o Sexo:"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <Spinner
+        android:id="@+id/spn_Sexo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="Escolha de Sexo"
+        android:minHeight="48dp"
+        android:scrollbarSize="20sp"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Digite sua Idade:"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/txt_Idade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Adicione sua idade aqui"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tempo de contribuição:"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/txt_Contribuicao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tempo contribuido"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/txt_Resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_Calcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="#3700B3"
+        android:text="Calcular"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+
+</LinearLayout>
