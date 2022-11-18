@@ -4,40 +4,28 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:padding="50dp"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/lblNome"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="100dp"
-        android:layout_marginTop="40dp"
-        android:text="Qual o seu nome?"
-        android:textSize="16dp" />
-
-    <EditText
-        android:id="@+id/txtNome"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="100dp"
-        android:layout_marginTop="40dp"
-        android:hint="Digite seu nome" />
+    <include layout="@layout/card" />
 
     <Button
         android:id="@+id/btnSalvar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="100dp"
         android:layout_marginTop="40dp"
-        android:text="Salvar" />
+        android:text="Cadastrar" />
 
 
     <TextView
         android:id="@+id/lblResultado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="100dp"
+        android:layout_gravity="center"
         android:layout_marginTop="40dp"
-        android:text="Olá, usuário não definido"
+        android:text="Usuário não definido"
+        android:textAlignment="center"
         android:textSize="30dp" />
+
+
 </LinearLayout>
